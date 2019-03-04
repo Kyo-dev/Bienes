@@ -1,0 +1,58 @@
+//COLORS
+$color_1:#671B1B;
+$color_2: #C0BF59;
+$color_3: #225C81;
+$black: #111;
+$white: #fff;
+
+//FONTS
+    //TITLE
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+$font_title: 'Oswald', sans-serif;
+    //CONTENT
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+$font_content: 'Lato', sans-serif;
+    //WIDTH
+$light: 300;
+$normal: 400;
+
+//LOYOUT
+$max_width: 1200px;
+
+// CANVAS
+$canvas: 12em;
+
+// MEDIA QUERY
+
+@mixin from ($size){
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin to ($size){
+    @media screen and(max-width: $size){
+        @content;
+    }
+}
+
+// BREAKPOINTS
+
+// SMALL
+$S: 480px;
+// MEDIUM
+$M: 768px;
+// LARGE
+$L: 1025;
+// EXTRA LARGE
+$XL: 1400;
+
+
+//IMPORTS
+@import "componets/base";
+@import "componets/header";
+@import "componets/menu";
+@import "componets/banner";
+@import "componets/buttom";
+@import "componets/services";
+@import "componets/staff";

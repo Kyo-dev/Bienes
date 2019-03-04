@@ -1,0 +1,21 @@
+.services{
+    display: flex;
+    justify-content: center;
+    
+    &__item{
+        text-align: center;
+        flex-grow: 1;
+        background: $color_1;
+        height: 5em;
+        padding: 0;
+        color: $white;
+        &:nth-of-type(2){
+            background: $color_2;
+        }
+        &:nth-of-type(3){
+            background: $color_3;
+            color: $white;
+            
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.banner {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: $black;
+        opacity: .5;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    &__copy {
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+
+        &__title {
+            font-family: $font_title;
+            color: $color_3;
+            margin: 0;
+            font-size: 7.2em;
+            @include to($M) {
+                font-size: 2.7em;
+            }
+        }
+            &__content {
+                font-size: 2em;
+                font-family: $font_content;
+                color: $white;
+                margin: 0;
+                @include to($M) {
+                    font-size: 1em;
+                }
+            }
+
+            &__buttom {
+                font-size: 1.1em;
+                border-radius: 100px;
+                @include to($M) {
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+
